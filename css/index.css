@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* style header */
+.header {
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b9b5b5;
+  display: flex;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+}
+.logo {
+  width: 60px;
+}
+.menu {
+  border: 1px solid black;
+  padding: 4px 6px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  background-color: #4d4d4d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style main */
+
+/* section hero */
+main {
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 105px;
+  left: 28px;
+  right: 28px;
+}
+.judul {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+.paragraf {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+.img-slideshow {
+  width: 100%;
+  margin-bottom: 25px;
+}
+/* section facil */
+.facil-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 45px;
+  padding-top: 30px;
+}
+.facil-img {
+  width: 100px;
+  border-radius: 50%;
+}
+.facil-paragraf {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.facil-list {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/*section message  */
+#message {
+  display: flex;
+}
+.form-output {
+  align-self: center;
+  margin-left: 25px;
+}
+.judul-message {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.tombol-message {
+  padding: 5px 115px;
+}
+
+/* footer*/
+.footer {
+  width: 103%;
+  height: 55px;
+  background-color: #414040;
+  color: #ebe9e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin-top: 30px;
+  margin-left: -28px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 490px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+  .menu {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-radius: 0%;
+  }
+  .logo {
+    margin-bottom: 14px;
+  }
+  .container {
+    margin-top: -85px;
+  }
+  .img-slideshow {
+    height: 140px;
+  }
+  #message {
+    flex-direction: column;
+  }
+  .form-output {
+    margin-top: 15px;
+    margin-left: -200px;
+  }
+  .footer {
+    width: 113%;
+  }
+}
+@media only screen and (min-width: 490px) {
+  .navbar {
+    width: 100%;
+  }
+}
